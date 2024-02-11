@@ -70,5 +70,28 @@ public class Array
         return differenceOfAverage;
     }
 
+    public int sumOfOddIndices()
+    {
+        int sum = 0;
+
+        for(int i = 1; i < array.length; i += 2)
+        {
+            sum = sum + array[i];
+        }
+
+        return sum;
+    }
+
+    public int sumOfEvenIndices()
+    {
+        int sum = 0;
+
+        for(int i = 0; i < array.length; i += 2)
+        {
+            sum = sum + array[i];
+        }
+
+        return sum;
+    }
 }
 
